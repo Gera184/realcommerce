@@ -1,7 +1,9 @@
 import React, { useContext } from 'react';
 import "./City.css";
 import Context from '../context/Context';
-
+import Image from 'next/image';
+import heart_added from '../../../public/heart_added.svg'
+import heart_defualt from '../../../public/heart.svg'
 
 const City = ({ selectedCity, setSelectedCity }) => {
   const { cityName, weatherText, temperature } = selectedCity;
@@ -40,8 +42,8 @@ const City = ({ selectedCity, setSelectedCity }) => {
           >
             {isInFavorites ? 'Remove from Favorites' : 'Add to Favorites'}
           </button>
-          <img
-            src={isInFavorites ? "/heart_added.svg" : "/heart.svg"}
+          <Image
+            src={isInFavorites ? heart_added : heart_defualt}
             alt="Heart Icon"
             className="img_icon"
           />
