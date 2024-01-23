@@ -1,0 +1,56 @@
+/* City.css */
+
+.city_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-top: 20px;
+}
+
+.details_wrapper {
+    flex: 1;
+}
+
+.city_details {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.weather_details {
+    font-size: 1rem;
+    color: #555;
+}
+
+.add_to_favorites {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.addToFavorites {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+button.removeFromFavorites {
+    background-color: #f44336;
+    color: #fff;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+
+.img_icon {
+    width: 24px;
+    height: 24px;
+}
